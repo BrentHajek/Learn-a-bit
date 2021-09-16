@@ -14,6 +14,11 @@ html {
     padding: 35px;
 }
 
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
 .header__nav {
     position: fixed;
     right: 35px;
@@ -21,6 +26,19 @@ html {
 
 .header__nav_list {
     display: flex;
+}
+
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    color: #3A3F47;
+    cursor: pointer;
+    display: none;
+    font-size: 20px;
+}
+
+.hamburger:focus {
+    outline: none;
 }
 
 .header__nav_list_item {
@@ -39,14 +57,58 @@ a:link {
 }
 
 a:hover {
+    cursor: pointer;
     text-decoration: underline;
 }
 
 .heading__h1 {
     font-size: 4rem;
+    margin-bottom: 0;
+    margin-top: 11rem;
     text-shadow: 2px 2px 4px #000000;
 }
 
 .body__para {
     color: #3A3F47;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    max-width: 25rem;
+    padding: 0;
+}
+
+.learn__more_btn {
+    background-color: #FFD36A;
+    border-radius: 12px;
+    color: #232932;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 55px;
+    margin: 0;
+    width: 150px;
+}
+
+@media screen and (max-width: 900px) {
+    .header__nav {
+        display: flex;
+        flex-direction: column;
+        font-size: 1em;
+        font-weight: normal;
+        margin-top: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: smaller;
+    }
+
+    .header__nav_list {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
 }
