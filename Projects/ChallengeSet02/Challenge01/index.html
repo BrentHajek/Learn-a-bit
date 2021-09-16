@@ -4,21 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Mintbean Learn-a-bit Challenge 01 - Header</title>
   </head>
 
-  <body>
-    Photos
-    Pricing
-    Revies
-    Contact
-
-    Heading 
-    Lorem ipsum dolor sit amet, 
-    consectetur adipiscing elit, sed 
-    do eiusmod tempor incididunt 
-    ut labore et dolore magna ali
-
-    Learn More
+  <body background="images\background.jpg" class="background__image">
+    <div class="container">
+      <header class="logo">
+        <img class="learnabit-logo" src="images\learnabit-logo.svg">
+        <nav class="header__nav">
+          <ul class="header__nav_list">
+            <li class="header__nav_list_item"><a href="#">Photos</a></li>
+            <li class="header__nav_list_item"><a href="#">Pricing</a></li>
+            <li class="header__nav_list_item"><a href="#">Reviews</a></li>
+            <li class="header__nav_list_item"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="main__body">
+        <div class="heading">
+          <h1 class="heading__h1">Heading</h1>
+        </div>
+        <div class="body__para">
+          <p>Lorem ipsum dolor sit amet, 
+              consectetur adipiscing elit, sed 
+              do eiusmod tempor incididunt 
+              ut labore et dolore magna ali</p>
+        </div>
+        <div class="learn__more_btn_div">
+          <button class="learn__more_btn">Learn More</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

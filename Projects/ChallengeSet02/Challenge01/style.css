@@ -1,0 +1,52 @@
+
+html {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.background__image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    padding: 35px;
+}
+
+.header__nav {
+    position: fixed;
+    right: 35px;
+}
+
+.header__nav_list {
+    display: flex;
+}
+
+.header__nav_list_item {
+    font-size: 2rem;
+    font-weight: bold;
+    list-style-type: none;
+    margin: 15px;
+}
+
+a {
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.heading__h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.body__para {
+    color: #3A3F47;
+}
