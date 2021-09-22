@@ -3,7 +3,7 @@
 *::before {   
   padding: 0;   
   margin: 0;   
-  border-sizing: border-box; 
+  box-sizing: border-box; 
 } 
 
 html {
@@ -51,6 +51,7 @@ p {
 
 .order__now {
   background-color: yellow;
+  border: none;
   border-radius: 10px;
   display: none;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -67,6 +68,51 @@ p {
 }
 
 #photo__info_article:hover .order__now {
+    cursor: pointer;
     display: inline-block;
     margin-bottom: 20px;
   }
+
+#photo__info_article:hover .dollar__sign {
+  color: yellow;
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    margin-bottom: 8px;
+  }
+
+  .photo__info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h3 {
+    margin-top: 2.5em;
+  }
+
+  h2 {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  p {
+    margin-bottom: 2.5em;
+  }
+
+  #photo__info_article:hover {
+    transform: scale(1.15);
+  }
+
+  #photo__info_article:hover h3 {
+    margin-bottom: 2em;
+  }
+}
